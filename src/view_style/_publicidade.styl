@@ -1,0 +1,46 @@
+.anuncio
+  background #fff
+  height 90px
+  margin 100px auto
+  padding 10px
+  text-align center
+  width 728px
+  box-sizing border-box
+  position relative
+  box-shadow 0 10px 20px rgba(#000, .2)
+  transition 300ms transform
+  &:hover
+    transform scale(1.1)
+    h1
+      transform scale(.8)
+  h1
+    font-size 11px
+    margin-bottom 4px
+    position absolute
+    top -20px
+    left 264px
+    color #fff
+    transition 300ms transform
+  p
+    font-size 12px
+    line-height 18px
+
+@media (max-width: 1024px)
+  .anuncio
+    width 336px
+    height 280px
+    h1
+      left 74px
+    p
+      position relative
+      top 40px
+
+@media (max-width: 600px)
+  .anuncio
+    width 250px
+    height 250px
+    h1
+      left 20px
+    p
+      position relative
+      top -2px

@@ -1,0 +1,44 @@
+@media print
+  *
+    background transparent !important
+    text-shadow none !important
+    filter none !important
+    -ms-filternone !important
+
+  body
+    margin 0
+    padding 0
+    line-height 1.4em
+
+  .header,
+  .footer,
+  .btn-less,
+  .btn-plus,
+  .login,
+  .layouts,
+  .actions
+    display none
+
+  input,
+  textarea,
+  label
+    border none !important
+
+  label
+    &[for|="GET-name"],
+    &[for|="GET-lastname"]
+      font-size 0 !important
+      & p
+        font-size 0 !important
+      & input
+        display inline
+        position relative !important
+        font-size 35px !important
+      & #GET-lastname
+        top 50px !important
+      & #GET-lastname
+        top -70px !important
+
+  .app
+    border none !important
+    box-shadow none !important

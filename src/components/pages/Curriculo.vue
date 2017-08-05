@@ -1,0 +1,29 @@
+<template lang="pug">
+div
+  section.container.animate_intro
+    h2
+      | Crie seu novo curriculo rápido, fácil e grátis!
+      br
+      | Aproveite para compartilha em suas redes sociais...
+
+    h3 Diversos formatos de curriculos para sua escolha!
+
+    h2 Preencha o formulário ou faça login...
+
+  main.app.animate_app_intro
+    section.section
+      form-curriculo
+
+  section.layouts
+    h1 Escolha o layout
+    layouts
+
+  section
+    action-menu
+</template>
+
+<script>
+export default {
+  name: 'curriculo'
+}
+</script>

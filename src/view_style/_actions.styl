@@ -1,0 +1,62 @@
+section.action
+  margin 60px auto
+.actions
+  background rgba(#fff,.8)
+  border-radius 6px
+  margin 0 auto
+  padding 0
+  position relative
+  width 100%
+.action-i
+  list-style-type none
+  &:first-of-type button
+    border-radius 6px 6px 0 0
+  &:last-of-type button
+    border-bottom none
+    border-radius 0 0 6px 6px
+  & button
+    background linear-gradient(90deg, rgba(#fff,0), rgba(#000,.3))
+    border 0
+    border-bottom 1px solid rgba(#000,.15)
+    cursor pointer
+    display block
+    font-size 16px
+    height inherit
+    line-height 26px
+    margin 0 auto
+    outline none
+    padding 20px 0
+    text-align center
+    width 100%
+    transition 10ms all
+    &:hover
+      background linear-gradient(90deg, rgba(#666,1), rgba(#fff,.3))
+      color #fff
+      transition .2s all
+      text-shadow 1px 1px 3px #666
+      transform scale(1.1)
+      border-radius 6px
+      svg, path
+        fill #fff
+      svg
+        z-index 9
+        filter drop-shadow( 0 10px 10px rgba(#000,.5) )
+    &:active
+      transform scale(1)
+    &:focus
+      animation .5s selectLayout
+      background linear-gradient(45deg, rgba(#666,1), rgba(#fff,.3))
+      color #fff
+      svg, path
+        fill #fff
+
+  & svg, & path
+    fill #333
+  & svg
+    height 30px
+    left 0
+    margin-left 20px
+    position absolute
+    width 30px
+    transition 1s all
+    z-index 1

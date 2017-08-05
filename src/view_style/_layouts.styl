@@ -1,0 +1,80 @@
+.layouts
+  background transparent
+  width 100%
+  max-width 800px
+  margin 40px auto
+  border-radius 10px
+  padding 20px
+  box-sizing border-box
+  user-select none
+  .center
+    width 270px
+    display block
+    margin 0 auto
+    // background red
+    &:after
+      content ""
+      display table
+      clear both
+  &:after
+    content ""
+    display table
+    clear both
+  h1
+    font-size 23px
+    text-align center
+    margin-bottom 30px
+    color #fff
+  .layout
+    background #ccc
+    width 100%
+    max-width 260px
+    height 190px
+    text-align center
+    font-size 13px
+    padding-top 10px
+    box-sizing border-box
+    border 1px solid #ccc
+    border-radius 4px
+    transition .3s all
+    cursor pointer
+    margin 30px auto
+    box-shadow 0 0 0 1px rgba(#fff, .5), 0 4px 20px rgba(#000, .3)
+    text-shadow 0 1px 1px #fff
+    position relative
+    z-index 99
+    &:before
+    &.active:before
+      content ""
+      display block
+      width 100%
+      height 100%
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      z-index -1
+    &:before
+      background #ccc
+    &.active:before
+      background linear-gradient(#49da7a, #31b045)
+      opacity .8
+    &:hover
+      transform scale(1.1)
+    &:active
+      transform scale(1)
+    &.active
+      background #fff
+      animation .3s selectLayout
+      border-color #42db5a
+      color #fff
+      text-shadow 0 1px 2px rgba(#000, .5)
+    &:last-of-type
+      margin-bottom 0
+    picture
+      background #fff
+      display block
+      width 100%
+      height 120px
+      margin 10px 0
