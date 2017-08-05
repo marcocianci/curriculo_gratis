@@ -72,9 +72,9 @@ form#curriculo(action="")
   fieldset.course
     legend.animate_intro
       | Formação Academica {{ msg }}
-      button.remove_course.btn-less(type="button")
+      button.remove_course.btn-less(type="button" @click='new_course')
         i -
-      button.new_course.btn-plus(type="button")
+      button.new_course.btn-plus(type="button" @click='remove_course')
         i +
 
     // Get the School
@@ -100,12 +100,12 @@ form#curriculo(action="")
       p.text Sobre:
       textarea(id="GET-courseabout-1" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." rows="10" cols="30" placeholder="Atividades e  desenvolvimento currilar do seu curso...")
 
-  fieldset.experience
+  fieldset.experience(:is="componentId")
     legend.animate_intro
       | Experiencias {{ msg }}
-      button.remove_experience.btn-less(type="button")
+      button.btn-less(type="button" @click='new_experience')
         i -
-      button.new_experience.btn-plus(type="button")
+      button.btn-plus(type="button" @click='remove_experience')
         i +
 
     // Get the Course Now?
@@ -144,6 +144,20 @@ export default {
   data () {
     return {
       msg: '##33'
+    }
+  },
+  methods: {
+    new_experience () {
+      console.log(this.msg)
+    },
+    remove_experience () {
+      console.log(this.msg)
+    },
+    new_course () {
+      console.log(this.msg)
+    },
+    remove_course () {
+      console.log(this.msg)
     }
   }
 }
