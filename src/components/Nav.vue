@@ -70,16 +70,19 @@ export default {
     border-radius 6px
     padding 10px 10px 0 10px
     background rgba(#fff,.2)
+    border 1px solid rgba(#fff,.3)
+    box-shadow 0 3px 13px rgba(#000,.2)
     box-sizing border-box
     transition .5s all
     position relative
     display block
+    color #333
     &:hover
       transform scale(1.2)
     &:hover,
     &.router-link-active
-      background rgba(#fff,.6)
-      color #333
+      background linear-gradient(to right,rgba(#fff,.6), rgba(#fff,0))
+      color #fff
       svg
         fill #333
     &:active
