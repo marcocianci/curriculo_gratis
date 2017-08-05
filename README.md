@@ -1,6 +1,9 @@
 # Curriculo Grátis
 
-> Essa aplicação web tem a finalidade de ajudar a todos que precise de um curriculo de um rápida e com elegancia, facilitando a forma que você cria seus currículos, com diversas opções de design totalmente gratuito.
+> Essa aplicação web tem a finalidade de ajudar a todos que precise de um curriculo, rápido, fácil e grátis.
+> Facilitando a forma que você cria seus currículos, com diversas opções de design totalmente gratuito.
+> Interface totalmente adpatavel ao tamanho da tela do dispositivo que estiver usando.
+> Animações interativas para melhorar a usabilidade, rica em interações reativas.
 
 ## Setup Dev
 
