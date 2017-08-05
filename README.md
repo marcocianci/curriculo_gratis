@@ -1,8 +1,8 @@
-# curriculo
+# Curriculo Grátis
 
-> A Vue.js project
+> Essa aplicação web tem a finalidade de ajudar a todos que precise de um curriculo de um rápida e com elegancia, facilitando a forma que você cria seus currículos, com diversas opções de design totalmente gratuito.
 
-## Build Setup
+## Setup Dev
 
 ``` bash
 # install dependencies
@@ -10,7 +10,10 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
+```
 
+## Build Setup
+```
 # build for production with minification
 npm run build
 
