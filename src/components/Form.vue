@@ -69,12 +69,12 @@ form#curriculo(action="")
       | Nao
 
 
-  fieldset.course
+  fieldset.course(v-for="(course, key, index) in coursers")
     legend.animate_intro
-      | Formação Academica {{ msg }}
-      button.remove_course.btn-less(type="button" @click='new_course')
+      | Formação Academica {{ msg }} {{ course.name }}
+      button.remove_course.btn-less(type="button" @click='new_course(key)')
         i -
-      button.new_course.btn-plus(type="button" @click='remove_course')
+      button.new_course.btn-plus(type="button" @click='remove_course(key)')
         i +
 
     // Get the School
@@ -100,9 +100,9 @@ form#curriculo(action="")
       p.text Sobre:
       textarea(id="GET-courseabout-1" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." rows="10" cols="30" placeholder="Atividades e  desenvolvimento currilar do seu curso...")
 
-  fieldset.experience(:is="componentId")
+  fieldset.experience(v-for="(exp, key, index) in exps")
     legend.animate_intro
-      | Experiencias {{ msg }}
+      | Experiencias {{ msg }} {{ exp.name }}
       button.btn-less(type="button" @click='new_experience')
         i -
       button.btn-plus(type="button" @click='remove_experience')
@@ -143,7 +143,23 @@ export default {
   name: 'form-curriculo',
   data () {
     return {
-      msg: '##33'
+      msg: '##33',
+      coursers: [
+        {
+          name: 'formaçao'
+        },
+        {
+          name: 'formaçao 2'
+        },
+        {
+          name: 'formaçao3'
+        }
+      ],
+      exps: [
+        {
+          name: 'experiencia'
+        }
+      ]
     }
   },
   methods: {
@@ -153,11 +169,15 @@ export default {
     remove_experience () {
       console.log(this.msg)
     },
-    new_course () {
+    new_course (key) {
       console.log(this.msg)
+      this.coursers.push({ name: key })
+      console.log(key)
     },
-    remove_course () {
+    remove_course (key) {
       console.log(this.msg)
+      this.$delete(this.coursers, key)
+      console.log(key)
     }
   }
 }
