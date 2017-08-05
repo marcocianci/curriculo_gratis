@@ -76,15 +76,11 @@ export default {
     transition .5s all
     position relative
     display block
-    color #333
     &:hover
       transform scale(1.2)
     &:hover,
     &.router-link-active
       background linear-gradient(to right,rgba(#fff,.6), rgba(#fff,0))
-      color #fff
-      svg
-        fill #333
     &:active
       transform scale(1)
     svg
