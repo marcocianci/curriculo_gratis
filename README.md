@@ -1,8 +1,17 @@
-# curriculo
+# Curriculo Grátis :page_facing_up:
 
-> A Vue.js project
+> Essa aplicação web tem a finalidade de ajudar a todos que precise de um curriculo, rápido, fácil e grátis.
+>
+> Facilitando a forma que você cria seus currículos, com diversas opções de design totalmente gratuito.
+>
+> Interface totalmente adpatavel ao tamanho da tela do dispositivo que estiver usando. :computer::iphone::tv::watch::video_game:
+>
+> Animações interativas para melhorar a usabilidade, rica em interações reativas.
 
-## Build Setup
+## Está em construção :construction:
+> Status de desenvolvimento... :shipit:
+
+## Setup Dev :headphones:
 
 ``` bash
 # install dependencies
@@ -10,15 +19,9 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-### Who do I talk to? ###
+### Who do I talk to? ### :performing_arts:
 
-* Repo owner or admin @lucaslimax
+* Repo owner or admin @lucaslimax :ghost:
 * Other community or team contact lucaslimay@gmail.com
