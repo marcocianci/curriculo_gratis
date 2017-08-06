@@ -72,10 +72,10 @@ form#curriculo(action="")
   fieldset.course(v-for="(course, key, index) in coursers")
     legend.animate_intro
       | Formação Academica {{ msg }} {{ course.name }}
-      button.remove_course.btn-less(type="button" @click='new_course(key)')
-        i -
-      button.new_course.btn-plus(type="button" @click='remove_course(key)')
+      button.new_course.btn-plus(type="button" @click='new_component(key)')
         i +
+      button.remove_course.btn-less(type="button" @click='remove_component(key)')
+        i -
 
     // Get the School
     label(for="GET-school-1").animate_intro
@@ -103,10 +103,10 @@ form#curriculo(action="")
   fieldset.experience(v-for="(exp, key, index) in exps")
     legend.animate_intro
       | Experiencias {{ msg }} {{ exp.name }}
-      button.btn-less(type="button" @click='new_experience')
-        i -
-      button.btn-plus(type="button" @click='remove_experience')
+      button.btn-plus(type="button" @click='new_component(key)')
         i +
+      button.btn-less(type="button" @click='remove_component(key)')
+        i -
 
     // Get the Course Now?
     label(for="GET-coursenow").animate_intro
@@ -147,12 +147,6 @@ export default {
       coursers: [
         {
           name: 'formaçao'
-        },
-        {
-          name: 'formaçao 2'
-        },
-        {
-          name: 'formaçao3'
         }
       ],
       exps: [
@@ -163,21 +157,16 @@ export default {
     }
   },
   methods: {
-    new_experience () {
-      console.log(this.msg)
-    },
-    remove_experience () {
-      console.log(this.msg)
-    },
-    new_course (key) {
+    new_component (key) {
       console.log(this.msg)
       this.coursers.push({ name: key })
       console.log(key)
     },
-    remove_course (key) {
+    remove_component (key) {
       console.log(this.msg)
       this.$delete(this.coursers, key)
       console.log(key)
+      alert('Milena te amo <3 volte a brilhaaaaar *-* eu vou pedir  pros anjos cantarem por mim.')
     }
   }
 }
