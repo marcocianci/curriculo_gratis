@@ -5,7 +5,7 @@
                                     @click.prevent="selectLayout(key)")
       h2 {{ item.name }}
       picture
-        img(:src="item.id + '.png'" :alt="item.description")
+        img(:src="item.src" :alt="item.description")
       h3 Author: {{ item.author }}
 </template>
 
@@ -19,6 +19,7 @@ export default {
           id: 'theme_lucaslimay',
           name: 'Layout Padrão',
           description: 'Descrição do layout e design',
+          src: '~/assets/bg-paper.jpg',
           author: 'Lucas Lima',
           isActive: false
         },
@@ -26,6 +27,7 @@ export default {
           id: 'theme_lucaslimax',
           name: 'Tema Designer',
           description: 'Descrição do layout e design',
+          src: '~/assets/bg-paper.jpg',
           author: 'Lucas Lima',
           isActive: false
         },
@@ -33,6 +35,7 @@ export default {
           id: 'theme_outro',
           name: 'Tema programador',
           description: 'Descrição do layout e design',
+          src: '~/assets/bg-paper.jpg',
           author: 'Lucas Lima',
           isActive: false
         },
@@ -40,6 +43,7 @@ export default {
           id: 'theme_teste',
           name: 'Nome do layout',
           description: 'Descrição do layout e design',
+          src: '~/assets/bg-paper.jpg',
           author: 'Lucas Lima',
           isActive: false
         }
