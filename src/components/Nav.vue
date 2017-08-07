@@ -64,11 +64,15 @@ export default {
       clear both
   li
     display inline-block
-    padding 0 10px
     box-sizing border-box
+    width 100%
+    &:last-of-type .menu-item
+      margin-bottom 0
   .menu-item
     border-radius 6px
-    padding 10px 10px 0 10px
+    padding 10px
+    width 100%
+    height 60px
     background rgba(#fff,.2)
     border 1px solid rgba(#fff,.3)
     box-shadow 0 3px 13px rgba(#000,.2)
@@ -76,21 +80,41 @@ export default {
     transition .5s all
     position relative
     display block
+    margin-bottom 20px
+    &:after
+      content ''
+      display table
+      clear both
     &:hover
-      transform scale(1.2)
+      transform scale(1.05)
     &:hover,
     &.router-link-active
       background linear-gradient(to right,rgba(#fff,.6), rgba(#fff,0))
     &:active
       transform scale(1)
     svg
-      width 32px
-      height 32px
-      margin-right 9px
+      width 42px
+      height 42px
       fill #fff
       display inline-block
+      float left
     span
       display block
-      float right
-
+      text-indent 15px
+      line-height 45px
+      float left
+      &:after,
+      &:before
+        content ''
+        display block
+        width 26px
+        height 4px
+        background rgba(#fff,.6)
+        border-radius 6px
+        position absolute
+        right 15px
+      &:after
+        top 65%
+      &:before
+        top 35%
 </style>
