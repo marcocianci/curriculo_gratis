@@ -71,11 +71,11 @@ form#curriculo(action="")
 
   fieldset.course(v-for="(course, key, index) in coursers")
     legend.animate_intro.text-left
-      | Formação Academica {{ msg }} {{ course.name }}
-      button.new_course.btn-plus(type="button" @click='new_component(key)')
-        i +
+      | Formação Academica
       button.remove_course.btn-less(type="button" @click='remove_component(key)')
         i -
+      button.new_course.btn-plus(type="button" @click='new_component(key)')
+        i +
 
     // Get the School
     label(for="GET-school-1").animate_intro
@@ -102,15 +102,15 @@ form#curriculo(action="")
 
   fieldset.experience(v-for="(exp, key, index) in exps")
     legend.animate_intro.text-left
-      | Experiencias {{ msg }} {{ exp.name }}
-      button.btn-plus(type="button" @click='new_component(key)')
-        i +
+      | Experiencias
       button.btn-less(type="button" @click='remove_component(key)')
         i -
+      button.btn-plus(type="button" @click='new_component(key)')
+        i +
 
     // Get the Course Now?
     label(for="GET-coursenow").animate_intro
-      input(id="GET-coursenow" type="radio" name="coursedate" value="now")
+      input(id="GET-coursenow" type="checkbox" name="coursedate" v-model="now")
       | Atual
 
     // Get the School
@@ -127,7 +127,7 @@ form#curriculo(action="")
     label(for="GET-coursedate-3").animate_intro
       p.text.text-left Inicio:
       input(id="GET-coursedate-3" type="date" name="coursedate" placeholder="00/00/0000")
-    label(for="GET-coursedate-4").animate_intro
+    label(for="GET-coursedate-4" v-show="!now").animate_intro
       p.text.text-left Termino:
       input(id="GET-coursedate-4" type="date" name="coursedate" placeholder="00/00/0000")
 
@@ -143,7 +143,7 @@ export default {
   name: 'form-curriculo',
   data () {
     return {
-      msg: '##33',
+      now: false,
       coursers: [
         {
           name: 'formaçao'
