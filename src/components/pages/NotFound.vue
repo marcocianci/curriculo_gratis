@@ -10,6 +10,11 @@ export default {
     return {
       msg: 'Nada encontrado 404'
     }
+  },
+  head: {
+    title: {
+      inner: 'Página não encontrada'
+    }
   }
 }
 </script>

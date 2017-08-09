@@ -15,6 +15,11 @@ div
 
 <script>
 export default {
-  name: 'version2'
+  name: 'version2',
+  head: {
+    title: {
+      inner: 'Versão 2'
+    }
+  }
 }
 </script>
