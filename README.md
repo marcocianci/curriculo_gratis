@@ -20,8 +20,6 @@ npm install
 # install dependencies with yarn
 yarn install
 
-***
-
 # serve with hot reload at localhost:9999
 npm run dev
 
