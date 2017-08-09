@@ -53,12 +53,19 @@ export default {
   methods: {
     selectLayout (key) {
       let event = this.layouts[key]
+      let appTheme = document.getElementById('app-theme')
+
       if (event.isActive) {
         this.disableLayout()
         event.isActive = false
+        appTheme.className = ''
+        appTheme.className = 'app animate_app_intro'
       } else {
         this.disableLayout()
         event.isActive = true
+        appTheme.className = ''
+        appTheme.className = 'app animate_app_intro'
+        appTheme.classList.add(event.id)
       }
     },
     disableLayout () {

@@ -10,7 +10,7 @@ div
 
     h2 Preencha o formulário ou faça login...
 
-  main.app.animate_app_intro
+  main#app-theme.app.animate_app_intro
     section.section
       form-curriculo
 
