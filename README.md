@@ -17,8 +17,16 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# install dependencies with yarn
+yarn install
+
+***
+
+# serve with hot reload at localhost:9999
 npm run dev
+
+# serve with yarn hot reload at localhost:9999
+yarn run dev
 ```
 
 ### Who do I talk to? ### :performing_arts:
