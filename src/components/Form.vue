@@ -24,19 +24,19 @@ form#curriculo(action="")
 
     label(for="GET-maritalstatus-s").animate_intro
       input(id="GET-maritalstatus-s" type="radio" name="maritalstatus" value="s" required).display-n-print
-      | Solteiro(a)
+      span Solteiro(a)
 
     label(for="GET-maritalstatus-c").animate_intro
       input(id="GET-maritalstatus-c" type="radio" name="maritalstatus" value="c" required).display-n-print
-      | Casado(a)
+      span Casado(a)
 
     label(for="GET-maritalstatus-d").animate_intro
       input(id="GET-maritalstatus-d" type="radio" name="maritalstatus" value="d" required).display-n-print
-      | Divorciado(a)
+      span Divorciado(a)
 
     label(for="GET-maritalstatus-v").animate_intro
       input(id="GET-maritalstatus-v" type="radio" name="maritalstatus" value="v" required).display-n-print
-      | Viuvo(a)
+      span Viuvo(a)
 
     // Get the State
     label(for="GET-state").animate_intro
@@ -62,11 +62,11 @@ form#curriculo(action="")
 
     label(for="GET-travel-yes").animate_intro
       input(id="GET-travel-yes" type="radio" name="travel" value="yes").display-n-print
-      | Sim
+      span Sim
 
     label(for="GET-travel-no").animate_intro
       input(id="GET-travel-no" type="radio" name="travel" value="no").display-n-print
-      | Nao
+      span Nao
 
 
   fieldset.course(v-for="(course, key, index) in coursers")

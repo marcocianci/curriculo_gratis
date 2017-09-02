@@ -18,8 +18,14 @@
   .layouts,
   .actions,
   .display-n,
-  .display-n-print
+  .display-n-print,
+  #curriculo input[type="radio"] ~ span
     display none !important
+  #curriculo input[type="radio"]:checked ~ span
+    display block !important
+    padding 0 !important
+  #curriculo label[for='GET-maritalstatus-s']
+    width auto !important
 
   input,
   textarea,
@@ -48,4 +54,5 @@
   #curriculo
     input,
     label
+    p
       padding 0 !important
