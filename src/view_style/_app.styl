@@ -145,15 +145,16 @@
           display inline-block
           float none
           margin 0 10px
+          width auto
 
       &:hover, &:focus
-        background #666
+        background #333
         border-radius 6px
         color #fff
         transform scale(1.03)
         transition .2s all
         text-shadow 0 2px 6px rgba(#000,.5)
-        box-shadow 0 0 10px #666
+        box-shadow 0 0 0 2px rgba(#fff,.6), 0 4px 16px rgba(#000,.6)
         z-index 999
       &:active
         transform scale(1.006)
@@ -163,7 +164,8 @@
         display table
         clear both
 
-    input, textarea
+    input,
+    textarea
       background #fff
       border 1px solid #ccc
       border-radius 3px

@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueHead from 'vue-head'
+
 import Header from '@/components/Header'
 import Nav from '@/components/Nav'
 import Form from '@/components/Form'
@@ -12,6 +14,7 @@ import Actions from '@/components/Actions'
 import Advertising from '@/components/Advertising'
 import Footer from '@/components/Footer'
 
+Vue.use(VueHead)
 Vue.component('nav-menu', Nav)
 Vue.component('header-page', Header)
 Vue.component('form-curriculo', Form)

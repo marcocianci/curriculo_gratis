@@ -9,8 +9,10 @@
 
 ## Status do projeto :construction:
 > Desenvolvimento constante :shipit:
+> Link https://curriculo-gratis.herokuapp.com/
 
-> Se você quer contribuir de alguma forma no código siga os passos abaixo para instalar em sua máquina.
+> Se você quiser contribuir de alguma forma no código siga os passos abaixo para instalar em sua máquina.
+
 ## Como instalar localmente o projeto :headphones:
 > Você vai precisar ter em sua máquina instalado [Node.js](https://nodejs.org)
 
@@ -18,8 +20,14 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# install dependencies with yarn
+yarn install
+
+# serve with hot reload at localhost:9999
 npm run dev
+
+# serve with yarn hot reload at localhost:9999
+yarn run dev
 ```
 
 ### Com quem você pode conversar sobre o projeto? ### :performing_arts:
