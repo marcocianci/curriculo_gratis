@@ -23,19 +23,19 @@ form#curriculo(action="")
     p.animate_intro.text-left Estado civil:
 
     label(for="GET-maritalstatus-s").animate_intro
-      input(id="GET-maritalstatus-s" type="radio" name="maritalstatus" value="s" required)
+      input(id="GET-maritalstatus-s" type="radio" name="maritalstatus" value="s" required).display-n-print
       | Solteiro(a)
 
     label(for="GET-maritalstatus-c").animate_intro
-      input(id="GET-maritalstatus-c" type="radio" name="maritalstatus" value="c" required)
+      input(id="GET-maritalstatus-c" type="radio" name="maritalstatus" value="c" required).display-n-print
       | Casado(a)
 
     label(for="GET-maritalstatus-d").animate_intro
-      input(id="GET-maritalstatus-d" type="radio" name="maritalstatus" value="d" required)
+      input(id="GET-maritalstatus-d" type="radio" name="maritalstatus" value="d" required).display-n-print
       | Divorciado(a)
 
     label(for="GET-maritalstatus-v").animate_intro
-      input(id="GET-maritalstatus-v" type="radio" name="maritalstatus" value="v" required)
+      input(id="GET-maritalstatus-v" type="radio" name="maritalstatus" value="v" required).display-n-print
       | Viuvo(a)
 
     // Get the State
@@ -61,11 +61,11 @@ form#curriculo(action="")
     p.animate_intro.text-left Disponibilidade para viagens:
 
     label(for="GET-travel-yes").animate_intro
-      input(id="GET-travel-yes" type="radio" name="travel" value="yes")
+      input(id="GET-travel-yes" type="radio" name="travel" value="yes").display-n-print
       | Sim
 
     label(for="GET-travel-no").animate_intro
-      input(id="GET-travel-no" type="radio" name="travel" value="no")
+      input(id="GET-travel-no" type="radio" name="travel" value="no").display-n-print
       | Nao
 
 
@@ -110,7 +110,7 @@ form#curriculo(action="")
 
     // Get the Course Now?
     label(for="GET-coursenow").animate_intro
-      input(id="GET-coursenow" type="checkbox" name="coursedate" v-model="now")
+      input(id="GET-coursenow" type="checkbox" name="coursedate" v-model="now").display-n-print
       | Atual
 
     // Get the School

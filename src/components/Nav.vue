@@ -1,5 +1,5 @@
 <template lang="pug">
-nav.menu-list.animate_intro
+nav.menu-list.animate_intro.display-n-print
   ul
     li(v-for='(item, key, index) in nav')
       router-link.menu-item(:to="'/' + item.link")

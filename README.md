@@ -9,7 +9,7 @@
 
 ## Status do projeto :construction:
 > Desenvolvimento constante :shipit:
-> Link https://curriculo-gratis.herokuapp.com/
+> Link [Curriculo Grátis](https://curriculo-gratis.herokuapp.com)
 >
 > Se você quiser contribuir de alguma forma no código siga os passos abaixo para instalar em sua máquina.
 

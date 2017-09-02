@@ -1,5 +1,5 @@
 <template lang="pug">
-ul.actions
+ul.actions.display-n-print
   li.action-i
     button(onclick="window.print();")
       svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32")

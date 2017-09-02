@@ -1,9 +1,7 @@
 {
   "name": "curriculo_gratis",
   "version": "1.0.1",
-  "description": "Essa aplicação web tem o objetivo de ajudar a todos que precise de um curriculo, rápido, fácil e grátis.
-                  Facilitando a forma que você cria seus currículos, com diversas opções de design totalmente gratuito.
-                  Interface totalmente adpatavel e reativa ao tamanho da tela do dispositivo que estive sendo renderizada.",
+  "description": "Essa aplicação web tem o objetivo de ajudar a todos que precise de um curriculo, rápido, fácil e grátis. Facilitando a forma que você cria seus currículos, com diversas opções de design totalmente gratuito. Interface totalmente adpatavel e reativa ao tamanho da tela do dispositivo que estive sendo renderizada.",
   "author": "Lucas Lima",
   "private": true,
   "scripts": {

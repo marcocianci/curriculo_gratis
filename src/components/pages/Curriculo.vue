@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  section.container.animate_intro
+  section.container.animate_intro.display-n-print
     h2
       | Crie seu novo curriculo rápido, fácil e grátis!
       br
@@ -14,11 +14,11 @@ div
     section.section
       form-curriculo
 
-  section.layouts
+  section.layouts.display-n-print
     h1 Escolha o layout
     layouts
 
-  section
+  section.display-n-print
     action-menu
 </template>
 
