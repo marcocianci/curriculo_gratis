@@ -11,6 +11,7 @@ import Form from '@/components/Form'
 import FormNew from '@/components/FormNew'
 import Layouts from '@/components/Layouts'
 import Actions from '@/components/Actions'
+import Notice from '@/components/Notice'
 import Advertising from '@/components/Advertising'
 import Footer from '@/components/Footer'
 
@@ -21,6 +22,7 @@ Vue.component('form-curriculo', Form)
 Vue.component('form-curriculo-new', FormNew)
 Vue.component('layouts', Layouts)
 Vue.component('action-menu', Actions)
+Vue.component('notice-page', Notice)
 Vue.component('publicidade-page', Advertising)
 Vue.component('footer-page', Footer)
 

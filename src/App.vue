@@ -3,6 +3,7 @@
     header-page
     nav-menu
     router-view
+    notice-page
     publicidade-page
     footer-page
 </template>
