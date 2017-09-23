@@ -24,9 +24,7 @@
   p
     font-size 12px
     line-height 18px
-
-@media (max-width: 1024px)
-  .anuncio
+  +tablet()
     width 336px
     height 280px
     h1
@@ -34,9 +32,7 @@
     p
       position relative
       top 40px
-
-@media (max-width: 600px)
-  .anuncio
+  +mobile()
     width 250px
     height 250px
     h1

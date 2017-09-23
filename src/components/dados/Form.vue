@@ -46,16 +46,16 @@ form#curriculo(action="")
     // Get the State
     label(for="GET-state").animate_intro
       p.text.text-left Cidade:
-      input(id="GET-state" value="São Paulo" type="text" name="state" placeholder="Nome da sua cidade atual...")
+      input(id="GET-state" type="text" name="state" placeholder="Nome da sua cidade atual...")
 
     // Get the Address
     label(for="GET-address").animate_intro
       p.text.text-left Endereço:
-      input(id="GET-address" value="Rua Manuel de Mattos Godinho" type="text" name="address" placeholder="Nome da rua ou avenida...")
+      input(id="GET-address" type="text" name="address" placeholder="Nome da rua ou avenida...")
 
     label(for="GET-address-number").animate_intro
       p.text.text-left Número:
-      input(id="GET-address-number" value="484" type="number" name="address-number" placeholder="Numero da casa ou condominio..")
+      input(id="GET-address-number" type="number" name="address-number" placeholder="Numero da casa ou condominio..")
 
     // Get the CEP
     label(for="GET-cep").animate_intro
@@ -85,12 +85,17 @@ form#curriculo(action="")
     // Get the School
     label(for="GET-school-1").animate_intro
       p.text.text-left Instituição:
-      input(id="GET-school-1" value="E.E.Jornalista Francisco Mesquita" type="text" name="school")
+      input(id="GET-school-1" type="text" name="school" placeholder="Escola, cursos, workshops...")
 
     // Get the Course
     label(for="GET-course-1").animate_intro
       p.text.text-left Formação:
-      input(id="GET-course-1" value="Ensino médio" type="text" name="course" placeholder="Nome do curso...")
+      input(id="GET-course-1" type="text" name="course" placeholder="Nome do curso...")
+
+    // Get the Course Now?
+    label(for="GET-coursenow").animate_intro
+      input(id="GET-coursenow" type="checkbox" name="coursedate" v-model="now").display-n-print
+      | Cursando
 
     // Get the Course date
     label(for="GET-coursedate-1").animate_intro
@@ -151,12 +156,12 @@ export default {
       now: false,
       coursers: [
         {
-          name: 'formaçao'
+          name: 'Formaçao'
         }
       ],
       exps: [
         {
-          name: 'experiencia'
+          name: 'Experiencia'
         }
       ]
     }
@@ -171,7 +176,6 @@ export default {
       console.log(this.msg)
       this.$delete(this.coursers, key)
       console.log(key)
-      alert('Milena te amo <3 volte a brilhaaaaar *-* eu vou pedir  pros anjos cantarem por mim.')
     }
   }
 }
