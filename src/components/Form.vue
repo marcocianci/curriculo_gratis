@@ -98,7 +98,7 @@ form#curriculo(action="")
     // Get the Course About
     label(for="GET-courseabout-1").animate_intro
       p.text.text-left Sobre:
-      textarea(id="GET-courseabout-1" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." rows="10" cols="30" placeholder="Atividades e  desenvolvimento currilar do seu curso...")
+      textarea(id="GET-courseabout-1" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." placeholder="Atividades e  desenvolvimento currilar do seu curso...")
 
   fieldset.experience(v-for="(exp, key, index) in exps")
     legend.animate_intro.text-left
@@ -135,7 +135,7 @@ form#curriculo(action="")
     // Get the Course About
     label(for="GET-courseabout-2").animate_intro
       p.text.text-left Sobre:
-      textarea(id="GET-courseabout-2" rows="10" cols="30" placeholder="Atividades e  desenvolvimento currilar do seu curso...")
+      textarea(id="GET-courseabout-2" placeholder="Atividades e  desenvolvimento currilar do seu curso...")
 </template>
 
 <script>
