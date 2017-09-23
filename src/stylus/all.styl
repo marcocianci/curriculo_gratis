@@ -1,0 +1,83 @@
+/* Import Reset 1 1 1 */
+@import 'config/_reset'
+@import 'config/_mixins'
+@import 'config/_variables'
+
+*
+  background transparent
+
+/* All.styl */
+html, body
+  height auto
+  margin 0
+  padding 0
+  width 100%
+
+body
+  background url("./assets/bg-paper.jpg") center bottom no-repeat fixed //linear-gradient(#000,#666)
+  background-size cover
+  box-sizing border-box
+  color #444
+  font-family Arial
+  font-size 16px
+  font-weight bold
+  height 100%
+  min-height 100%
+  overflow-x hidden
+  padding 20px
+  position relative
+  &:before
+    background linear-gradient(rgba(#000,.6),rgba(#000,.8))
+    content ""
+    display block
+    height 100%
+    left 0
+    position absolute
+    top 0
+    width 100%
+    z-index -1
+
+hr
+  border 0
+  border-bottom 4px double  #eee
+  margin 10px auto
+
+h1
+  font-size 60px
+  text-shadow 10px 10px 20px rgba(#000, .1)
+  a
+    font-size inherit
+
+.br-mobile
+  display block
+
+a
+  color #fff
+  font-size 18px
+  text-decoration none
+  line-height 30px
+  transition .5s all
+
+@import '_app-print'
+
+@import 'base/_app'
+@import 'base/_header'
+@import 'base/_container'
+@import 'base/_footer'
+
+@import 'components/_actions'
+@import 'components/_help'
+@import 'components/_layouts'
+@import 'components/_login'
+@import 'components/_logo'
+@import 'components/_modal'
+@import 'components/_publicidade'
+
+@import 'themes/_template'
+
+@import '_app-top-600'
+@import '_app-top-800'
+@import '_app-top-1440'
+
+@import 'others/_animate'
+@import 'others/_helpers-hack'
