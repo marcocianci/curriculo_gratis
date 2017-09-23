@@ -7,7 +7,7 @@ form#curriculo(action="")
     // Get the name
     label(for="GET-name").animate_intro
       p.text.text-left Nome completo:
-      input(id="GET-name" value="Lucas Ferreira de Lima" type="text" name="name" placeholder="Preencha com seu nome completo..." required)
+      input(id="GET-name" type="text" name="name" placeholder="Preencha com seu nome completo..." required)
 
     // Get the date of birth
     label(for="GET-dateofbirth").animate_intro
@@ -16,8 +16,13 @@ form#curriculo(action="")
 
     // Get the nationality
     label(for="GET-nationality").animate_intro
-      p.text.text-left Nacionalidade:
-      input(id="GET-nationality" value="Brasileiro" type="text" name="nationality" placeholder="Se nasceu no Brasil é brasileiro..." required)
+      p.text.text-left Sua nacionalidade:
+      select(id="GET-nationality" name="nationality" required)
+        option(value="") Selecione seu pais de origem
+        option(value="BR") Brasil
+        option(value="SA") Sei lá
+        option(value="RU") Russia
+        option(value="US") Estados Unidos
 
     // Get the marital status
     p.animate_intro.text-left Estado civil:

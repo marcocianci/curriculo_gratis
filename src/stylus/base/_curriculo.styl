@@ -1,0 +1,122 @@
+#curriculo
+  fieldset
+    padding 20px 0 10px
+    z-index 1
+    &:first-of-type legend
+      text-align center
+  legend
+    width 100%
+    font-size 22px
+    padding 0 10px
+    box-sizing border-box
+
+  label
+    box-sizing border-box
+    width 100%
+    display block
+    line-height 30px
+    padding 10px
+    cursor pointer
+    background linear-gradient(rgba(#fff,0),rgba(#fff,1))
+    font-size 14px
+    font-weight 100
+    transform scale(1)
+    transition .2s all
+    text-shadow 0 2px 2px rgba(#000,.2)
+    position relative
+    z-index 1
+    &[for|="GET-travel"],
+    &[for|="GET-maritalstatus"],
+    &[for|="GET-address-number"],
+    &[for|="GET-cep"]
+    &[for|="GET-coursedate"]
+      width 50%
+      float left
+      will-change opacity, translate, scale
+    &[for|="GET-travel"]:hover,
+    &[for|="GET-maritalstatus"]:hover,
+    &[for|="GET-address-number"]:hover,
+    &[for|="GET-cep"]:hover
+    &[for|="GET-coursedate"]:hover
+      z-index 999
+      transition .2s all
+    &[for|="GET-travel"]:nth-of-type(odd),
+    &[for|="GET-maritalstatus"]:nth-of-type(odd),
+    &[for|="GET-address-number"],
+    &[for|="GET-coursedate"]:nth-of-type(odd)
+      border-right 1px solid #eee
+      transition .2s all
+    &[for|="GET-travel"]:nth-of-type(odd):hover,
+    &[for|="GET-maritalstatus"]:nth-of-type(odd):hover,
+    &[for|="GET-address-number"]:hover,
+    &[for|="GET-coursedate"]:nth-of-type(odd):hover
+      border-right 1px solid rgba(#eee,0)
+      transition .2s all
+      z-index 999
+    &[for|="GET-state"],
+    &[for|="GET-courseabout"],
+    &[for|="GET-coursenow"]
+      clear both
+    &[for|="GET-coursenow"]
+      text-align center
+      width 100% !important
+      input
+        display inline-block
+        float none
+        margin 0 10px
+        width auto
+
+    &:hover, &:focus
+      background #333
+      border-radius 6px
+      color #fff
+      transform scale(1.03)
+      transition .2s all
+      text-shadow 0 2px 6px rgba(#000,.5)
+      box-shadow 0 0 0 2px rgba(#fff,.6), 0 4px 16px rgba(#000,.6)
+      z-index 999
+    &:active
+      transform scale(1.006)
+      transition .2s all
+    &:after
+      content ''
+      display table
+      clear both
+
+  input,
+  textarea,
+  select
+    background #fff
+    border 1px solid #ccc
+    border-radius 3px
+    box-sizing border-box
+    padding 10px
+    margin 10px auto 0 auto
+    width 100%
+    max-width 100%
+    clear both
+    transition .2s all
+    &:focus
+      background #666
+      color #fff
+      transition .2s all
+    &:hover
+      background #fff
+      color #666
+      transition .2s all
+
+  input[type="radio"]
+    width auto
+    float left
+    margin 8px 10px 0 0
+  input[type="date"]
+    padding 7.5px
+    // padding 8.3px
+    // clear both
+
+  input:focus,
+  textarea:focus,
+  select:focus
+    box-shadow 0 0 0px 4px rgba(#000,.1)
+  input[type="radio"]:focus
+    box-shadow 0 0 0px 4px rgba(#000,0)

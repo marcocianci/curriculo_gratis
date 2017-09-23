@@ -7,7 +7,7 @@ import VueHead from 'vue-head'
 
 import Header from '@/components/Header'
 import Nav from '@/components/Nav'
-import Form from '@/components/Form'
+import Form from '@/components/dados/Form'
 import FormNew from '@/components/FormNew'
 import Layouts from '@/components/Layouts'
 import Actions from '@/components/Actions'
