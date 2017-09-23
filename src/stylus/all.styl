@@ -14,8 +14,7 @@ html, body
   width 100%
 
 body
-  background url("./assets/bg-paper.jpg") center bottom no-repeat fixed //linear-gradient(#000,#666)
-  background-size cover
+  background linear-gradient(#000 + 60, color1)
   box-sizing border-box
   color #444
   font-family Arial
@@ -26,6 +25,13 @@ body
   overflow-x hidden
   padding 20px
   position relative
+  +mobile()
+    background linear-gradient(#000 + 60, color2)
+  +tablet()
+    background linear-gradient(#000 + 60, color3)
+  +desktop()
+    background url("./assets/bg-paper.jpg") center bottom no-repeat fixed
+    background-size cover
   &:before
     background linear-gradient(rgba(#000,.6),rgba(#000,.8))
     content ""
