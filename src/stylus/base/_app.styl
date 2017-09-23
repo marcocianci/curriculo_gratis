@@ -71,11 +71,65 @@
       font-style normal
     &.btn-less i
       top -2px
-
   .section
     clear both
-
     p
       font-weight 600
       padding 20px 10px 10px 10px
       clear both
+  +mobile()
+    label
+      width 50% !important
+      box-sizing border-box
+      float left
+      &[for|="GET-courseabout"]
+        width 100% !important
+        clear both
+        float none
+  +tablet()
+    max-width 90%
+    .btn-plus, .btn-less
+      float left
+      margin 0
+      top -4px
+    .btn-plus
+      margin 0 10px
+    label
+      &[for|="GET-dateofbirth"],
+      &[for|="GET-nationality"]
+        width 25% !important
+  +desktop()
+    max-width 70%
+    label
+      border-right 1px solid #eee !important
+      box-sizing border-box
+      float left
+      width 33.3% !important
+      &[for|="GET-courseabout"],
+        clear both
+        float none
+        width 100% !important
+      &[for|="GET-maritalstatus"]
+        width 25% !important
+        &:hover
+          border 0 !important
+      &[for|="GET-travel-yes"],
+      &[for|="GET-travel-no"]
+        text-align center
+        width 50% !important
+        & input
+          display inline-block !important
+          float none !important
+          position relative
+          top -5px
+      &:hover
+        border 0 !important
+      &[for|="GET-cep"],
+      &[for|="GET-address-number"],
+      &[for|="GET-coursedate-1"],
+      &[for|="GET-coursedate-2"],
+      &[for|="GET-coursedate-3"],
+      &[for|="GET-coursedate-4"]
+        width 16.7% !important
+        &:hover
+          border 0 !important

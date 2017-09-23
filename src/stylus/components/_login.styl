@@ -5,6 +5,8 @@
   -moz-user-select none    /* Firefox 43+ */
   -ms-user-select none     /* No support yet */
   user-select none
+  +tablet()
+    margin 0 auto 60px
 
 .login_btn
   text-shadow 0 2px 16px #fff, 0 2px 36px #fff, 0 1px 50px #000
@@ -50,3 +52,20 @@
     color #0077B7
   &.twitter
     color #76A9EA
+  +tablet()
+    margin-bottom 26px
+    margin-left 26px
+  +desktop()
+    margin-left 3%
+    transition .3s all
+    width 166px
+    &:first-of-type
+      margin-left 0
+
++desktop()
+  .login_table
+    display inline
+    margin-left 3%
+    transition .3s all
+    &:first-of-type
+      margin-left 0

@@ -12,6 +12,11 @@
     display block
     margin 0 auto
     // background red
+    +mobile()
+      width 570px
+      padding-left 4%
+    +tablet()
+      width 770px
     &:after
       content ""
       display table
@@ -43,6 +48,23 @@
     text-shadow 0 1px 1px #fff
     position relative
     z-index 99
+    +mobile()
+      width 47% !important
+      box-sizing border-box
+      float left
+      margin 0 !important
+      margin-bottom 30px !important
+      margin-right 4% !important
+      &:nth-of-type(2n)
+        margin-right 0
+    +tablet()
+      width 25% !important
+      box-sizing border-box
+      max-width 160px !important
+      float left
+      margin 0 !important
+      margin-bottom 30px !important
+      margin-right 4% !important
     &:before
     &.active:before
       content ""
