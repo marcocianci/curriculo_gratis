@@ -1,42 +1,36 @@
 .anuncio
+  width 250px
+  height 250px
   background #fff
-  height 90px
   margin 100px auto
   padding 10px
   text-align center
-  width 728px
   box-sizing border-box
   position relative
   box-shadow 0 10px 20px rgba(#000, .2)
   transition 300ms transform
+  will-changed transform
   &:hover
     transform scale(1.1)
     h1
-      transform scale(.8)
+      transform scale(.8) translateY(-50px)
   h1
+    box-sizing border-box
+    width 100%
+    text-align center
     font-size 11px
-    margin-bottom 4px
-    position absolute
-    top -20px
-    left 264px
     color #fff
     transition 300ms transform
+    transform translateY(-40px)
+    position absolute
+    margin 4px auto
+    will-changed transform
   p
     font-size 12px
     line-height 18px
   +tablet()
     width 336px
     height 280px
-    h1
-      left 74px
-    p
-      position relative
-      top 40px
-  +mobile()
-    width 250px
-    height 250px
-    h1
-      left 20px
-    p
-      position relative
-      top -2px
+  +desktop()
+    height 90px
+    width 728px
