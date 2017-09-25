@@ -20,7 +20,7 @@ export default {
 </script>
 <style lang="stylus">
 .notice
-  background blue
+  background red
   position fixed
   top 0
   right 0
