@@ -20,7 +20,7 @@ export default {
 </script>
 <style lang="stylus">
 .notice
-  background red
+  background blue
   position fixed
   top 0
   right 0
@@ -31,6 +31,7 @@ export default {
   border-radius 6px
   box-shadow 0 6px 13px red
   cursor pointer
+  opacity .8
   p
     color #fff
 </style>

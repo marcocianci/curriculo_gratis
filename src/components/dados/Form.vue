@@ -76,7 +76,7 @@ form#curriculo(action="")
 
   fieldset.course(v-for="(course, key, index) in coursers")
     legend.animate_intro.text-left
-      | Formação Academica
+      | {{ course.name }}
       button.remove_course.btn-less(type="button" @click='remove_component(key)')
         i -
       button.new_course.btn-plus(type="button" @click='new_component(key)')
@@ -112,7 +112,7 @@ form#curriculo(action="")
 
   fieldset.experience(v-for="(exp, key, index) in exps")
     legend.animate_intro.text-left
-      | Experiencias
+      | {{ exp.name }}
       button.btn-less(type="button" @click='remove_component(key)')
         i -
       button.btn-plus(type="button" @click='new_component(key)')
@@ -156,7 +156,7 @@ export default {
       now: false,
       coursers: [
         {
-          name: 'Formaçao'
+          name: 'Formação Academica'
         }
       ],
       exps: [
@@ -171,11 +171,15 @@ export default {
       console.log(this.msg)
       this.coursers.push({ name: key })
       console.log(key)
+      console.log('##########')
+      console.log(this)
     },
     remove_component (key) {
       console.log(this.msg)
       this.$delete(this.coursers, key)
       console.log(key)
+      console.log('##########')
+      console.log(this)
     }
   }
 }
