@@ -5,7 +5,7 @@
                                     @click.prevent="selectLayout(key)")
       h2 {{ item.name }}
       picture
-        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill='#ccc')
+        svg(xmlns="http://www.w3.org/2000/svg" height="160" viewBox="0 0 100 100" fill='#ccc')
           circle(cx="80" cy="10" r="6")
           rect(x='10' y='12' rx='9' ry='9' width='50' height='2')
           rect(x='10' y='22' rx='9' ry='9' width='50' height='2')
