@@ -77,6 +77,11 @@ form#curriculo(action="")
       button.new_course.btn-plus(type="button" @click='new_component(key)')
         i +
 
+    // Get the Course Now?
+    label(for="GET-coursenow").animate_intro
+      input(id="GET-coursenow" type="checkbox" name="coursedate" v-model="now").display-n-print
+      | Cursando
+
     // Get the School
     label(for="GET-school-1").animate_intro
       p.text.text-left Instituição:
@@ -87,10 +92,6 @@ form#curriculo(action="")
       p.text.text-left Formação:
       input(id="GET-course-1" type="text" name="course" placeholder="Nome do curso...")
 
-    // Get the Course Now?
-    label(for="GET-coursenow").animate_intro
-      input(id="GET-coursenow" type="checkbox" name="coursedate" v-model="now").display-n-print
-      | Cursando
 
     // Get the Course date
     label(for="GET-coursedate-1").animate_intro
