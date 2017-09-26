@@ -112,8 +112,17 @@
     margin 8px 10px 0 0
   input[type="date"]
     padding 7.5px
-    // padding 8.3px
-    // clear both
+  select
+    padding 9px
+  +mobile()
+    label[for='GET-nationality']
+      width 100% !important
+  +tablet()
+    label[for='GET-nationality']
+      width 25% !important
+  +desktop()
+    label[for='GET-nationality']
+      width 33.3% !important
 
   input:focus,
   textarea:focus,
