@@ -17,12 +17,7 @@ form#curriculo(action="")
     // Get the nationality
     label(for="GET-nationality").animate_intro
       p.text.text-left Sua nacionalidade:
-      select(id="GET-nationality" name="nationality" required)
-        option(value="") Selecione seu pais de origem
-        option(value="BR") Brasil
-        option(value="SA") Sei lá
-        option(value="RU") Russia
-        option(value="US") Estados Unidos
+      select-country
 
     // Get the marital status
     p.animate_intro.text-left Estado civil:
@@ -149,6 +144,11 @@ form#curriculo(action="")
 </template>
 
 <script>
+import Vue from 'vue'
+import SelectCountry from '@/components/dados/SelectCountry'
+
+Vue.component('select-country', SelectCountry)
+
 export default {
   name: 'form-curriculo',
   data () {
