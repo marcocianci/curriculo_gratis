@@ -4,18 +4,19 @@ div
     h2
       | Crie seu novo curriculo rápido, fácil e grátis!
       br
-      | Aproveite para compartilha em suas redes sociais...
+      | Aproveite para compartilhar em suas redes sociais...
 
     h3 Diversos formatos de curriculos para sua escolha!
 
-    h2 Preencha o formulário ou faça login...
+    h2 Preencha o formulário abaixo..
+    // ou faça login...
 
   main#app-theme.app.animate_app_intro
     section.section
       form-curriculo
 
   section.layouts.display-n-print
-    h1 Escolha o layout
+    h1 Escolha o estilo
     layouts
 
   section.display-n-print
