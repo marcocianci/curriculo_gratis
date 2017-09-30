@@ -1,6 +1,6 @@
 .app
   center()
-  background rgba(#eee,1)
+  background #eee
   box-sizing border-box
   border-radius 10px 0 10px 10px
   box-shadow 0 0 0 1px #fff, 0 0 30px rgba(#000,.1)
@@ -17,7 +17,6 @@
   -webkit-tap-highlight-color rgba(255, 255, 255, 0) !important
   -webkit-focus-ring-color rgba(255, 255, 255, 0) !important
   outline none !important
-  transition .4s background
   z-index 9
   position relative
   &:hover
@@ -32,7 +31,7 @@
   & > hr:last-of-type
     border-color  #ccc
   .text-left
-    text-align left
+    text-align left !important
   .text
     margin 0 !important
     padding 0 !important
@@ -80,7 +79,8 @@
       width 50% !important
       box-sizing border-box
       float left
-      &[for|="GET-courseabout"]
+      &[for|="GET-courseabout"],
+      &[for|="GET-expsabout"]
         width 100% !important
         clear both
         float none
@@ -105,6 +105,7 @@
       &[for|="GET-dateofbirth"]
         width 33.3% !important
       &[for|="GET-courseabout"],
+      &[for|="GET-expsabout"],
         clear both
         float none
         width 100% !important
@@ -125,10 +126,8 @@
         border 0 !important
       &[for|="GET-cep"],
       &[for|="GET-address-number"],
-      &[for|="GET-coursedate-1"],
-      &[for|="GET-coursedate-2"],
-      &[for|="GET-coursedate-3"],
-      &[for|="GET-coursedate-4"]
+      &[for|="GET-coursedate"],
+      &[for|="GET-expsdate"]
         width 16.7% !important
         &:hover
           border 0 !important

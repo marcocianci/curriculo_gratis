@@ -4,10 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueHead from 'vue-head'
+import VueScrollTo from 'vue-scrollto'
 
 import Header from '@/components/Header'
 import Nav from '@/components/Nav'
-import Form from '@/components/dados/Form'
+import Form from '@/components/dados/FormData'
 import FormNew from '@/components/FormNew'
 import Layouts from '@/components/Layouts'
 import Actions from '@/components/Actions'
@@ -16,6 +17,8 @@ import Advertising from '@/components/Advertising'
 import Footer from '@/components/Footer'
 
 Vue.use(VueHead)
+Vue.use(VueScrollTo)
+
 Vue.component('nav-menu', Nav)
 Vue.component('header-page', Header)
 Vue.component('form-curriculo', Form)

@@ -7,8 +7,12 @@
   legend
     width 100%
     font-size 22px
-    padding 0 10px
+    padding 0 0 20px 10px
     box-sizing border-box
+    &.animate_intro.text-left
+      float left
+      text-align center
+      width 83.3% !important
 
   label
     box-sizing border-box
@@ -30,36 +34,43 @@
     &[for|="GET-maritalstatus"],
     &[for|="GET-address-number"],
     &[for|="GET-cep"]
-    &[for|="GET-coursedate"]
+    &[for|="GET-coursedate"],
+    &[for|="GET-expsdate"]
       width 50%
       float left
     &[for|="GET-travel"]:hover,
     &[for|="GET-maritalstatus"]:hover,
     &[for|="GET-address-number"]:hover,
     &[for|="GET-cep"]:hover
-    &[for|="GET-coursedate"]:hover
+    &[for|="GET-coursedate"]:hover,
+    &[for|="GET-expsdate"]:hover
       z-index 999
       transition .2s all
     &[for|="GET-travel"]:nth-of-type(odd),
     &[for|="GET-maritalstatus"]:nth-of-type(odd),
     &[for|="GET-address-number"],
-    &[for|="GET-coursedate"]:nth-of-type(odd)
+    &[for|="GET-coursedate"]:nth-of-type(odd),
+    &[for|="GET-expsdate"]:nth-of-type(odd)
       border-right 1px solid #eee
       transition .2s all
     &[for|="GET-travel"]:nth-of-type(odd):hover,
     &[for|="GET-maritalstatus"]:nth-of-type(odd):hover,
     &[for|="GET-address-number"]:hover,
-    &[for|="GET-coursedate"]:nth-of-type(odd):hover
+    &[for|="GET-coursedate"]:nth-of-type(odd):hover,
+    &[for|="GET-expsdate"]:nth-of-type(odd):hover
       border-right 1px solid rgba(#eee,0)
       transition .2s all
       z-index 999
     &[for|="GET-state"],
-    &[for|="GET-courseabout"],
-    &[for|="GET-coursenow"]
+    &[for|="GET-courseabout"]
+    &[for|="GET-expsabout"]
       clear both
-    &[for|="GET-coursenow"]
+    &[for|="GET-coursenow"],
+    &[for|="GET-expsnow"]
       text-align center
       width 100% !important
+      float right
+
       input
         display inline-block
         float none
@@ -118,11 +129,22 @@
     label[for='GET-nationality']
       width 100% !important
   +tablet()
-    label[for='GET-nationality']
-      width 25% !important
+    label
+      &[for='GET-nationality']
+        width 25% !important
+      &[for|="GET-coursenow"],
+      &[for|="GET-expsnow"]
+        text-align center
+        width 16.7% !important
+        float right
   +desktop()
-    label[for='GET-nationality']
-      width 33.3% !important
+    label
+      &[for='GET-nationality']
+        width 33.3% !important
+      &[for|="GET-coursenow"],
+      &[for|="GET-expsnow"]
+        &.active
+          transform translateY(83px)
 
   input:focus,
   textarea:focus,
