@@ -5,6 +5,8 @@ footer.footer.animate_intro.display-n-print
     br
     | Author:
     small  @lucaslimay
+  a(href="#" v-scroll-to="'#top'").scroll-top
+    | Subir a página
 </template>
 
 <script>

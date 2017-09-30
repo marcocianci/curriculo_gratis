@@ -1,5 +1,5 @@
 <template lang="pug">
-header.header.animate_intro.display-n-print
+header#top.header.animate_intro.display-n-print
   h1
     a.logo(href="/")
       svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60").logo-icon
