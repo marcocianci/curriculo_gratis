@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div#about
   section.container.animate_intro
     h1 Informações
     p Esse web aplicativo é uma ação social idealizada por Lucas Ferreira de Lima.

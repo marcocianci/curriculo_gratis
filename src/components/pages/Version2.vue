@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div#v2
   section.container.animate_intro
     h2
       | Nova forma de fazer curriculo.

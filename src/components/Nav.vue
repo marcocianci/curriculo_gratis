@@ -2,7 +2,7 @@
 nav.menu-list.animate_intro.display-n-print
   ul
     li(v-for='(item, key, index) in nav')
-      router-link.menu-item(:to="'/' + item.link")
+      router-link.menu-item(:to="'/' + item.link" v-scroll-to="'#donate'")
         //- icon Info - SVG omg
         svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" v-show="item.link == 'about'")
           path(d="M230.724 181.208c-2.393 2.587-3.95 4.256-5.12 5.508 2.17-2.337 5.12-5.508 5.12-5.508z")
