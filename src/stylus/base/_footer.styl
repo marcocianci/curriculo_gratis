@@ -18,8 +18,19 @@
   color #333
   box-sizing border-box
   bottom 20px
-  padding 13px
+  padding 10px 15px
   position fixed
   right 20px
+  border solid 4px #333
+  border-radius 50%
   &:hover
-    color #666
+    color #fff !important
+    background #333
+    border solid 4px #fff
+    animation .5s scroll_top infinite alternate
+
+@keyframes scroll_top
+  0%
+    transform translateY(0)
+  100%
+    transform translateY(-15px)
