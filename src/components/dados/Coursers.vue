@@ -10,7 +10,7 @@
 
       // Get the Course Now?
       label(for="GET-coursenow" v-bind:class="{ active: coursers_now }").animate_intro
-        input(id="GET-coursenow" type="checkbox" name="coursedate" v-model="coursers_now").display-n-print
+        input(id="GET-coursenow" type="checkbox" name="coursedata" v-model="coursers_now").display-n-print
         | Cursando
 
       // Get the School
@@ -23,13 +23,13 @@
         p.text.text-left Formação:
         input(id="GET-course" type="text" name="course" placeholder="Nome do curso...")
 
-      // Get the Course date
-      label(for="GET-coursedate").animate_intro
+      // Get the Course data
+      label(for="GET-coursedata").animate_intro
         p.text.text-left Inicio:
-        input(id="GET-coursedate" type="date" name="coursedate" placeholder="00/00/0000").animate_intro
-      label(for="GET-coursedate" v-show="!coursers_now").animate_intro
+        input(id="GET-coursedata" type="data" name="coursedata" placeholder="00/00/0000").animate_intro
+      label(for="GET-coursedata" v-show="!coursers_now").animate_intro
         p.text.text-left Termino:
-        input(id="GET-coursedate" type="date" name="coursedate" placeholder="00/00/0000").animate_intro
+        input(id="GET-coursedata" type="data" name="coursedata" placeholder="00/00/0000").animate_intro
 
       // Get the Course About
       label(for="GET-courseabout").animate_intro

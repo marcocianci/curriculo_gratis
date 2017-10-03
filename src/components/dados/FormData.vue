@@ -9,10 +9,10 @@ form#curriculo(action="")
       p.text.text-left Nome completo:
       input(id="GET-name" type="text" name="name" placeholder="Preencha com seu nome completo..." required)
 
-    // Get the date of birth
-    label(for="GET-dateofbirth").animate_intro
+    // Get the data of birth
+    label(for="GET-dataofbirth").animate_intro
       p.text.text-left Data de nascimento:
-      input(id="GET-dateofbirth" type="date" name="dateofbirth" placeholder="00/00/0000" required)
+      input(id="GET-dataofbirth" type="data" name="dataofbirth" placeholder="00/00/0000" required)
 
     // Get the nationality
     label(for="GET-nationality").animate_intro

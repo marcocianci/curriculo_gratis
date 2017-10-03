@@ -10,7 +10,7 @@
 
       // Get the exps Now?
       label(for="GET-expsnow" v-bind:class="{ active: exps_now }").animate_intro
-        input(id="GET-expsnow" type="checkbox" name="expsdate" v-model="exps_now").display-n-print
+        input(id="GET-expsnow" type="checkbox" name="expsdata" v-model="exps_now").display-n-print
         | Atual
 
       // Get the School
@@ -23,13 +23,13 @@
         p.text.text-left Cargo:
         input(id="GET-exps" type="text" name="exps" placeholder="Titulo ou cargo...")
 
-      // Get the exps date
-      label(for="GET-expsdate").animate_intro
+      // Get the exps data
+      label(for="GET-expsdata").animate_intro
         p.text.text-left Inicio:
-        input(id="GET-expsdate" type="date" name="expsdate" placeholder="00/00/0000")
-      label(for="GET-expsdate" v-show="!exps_now").animate_intro
+        input(id="GET-expsdata" type="data" name="expsdata" placeholder="00/00/0000")
+      label(for="GET-expsdata" v-show="!exps_now").animate_intro
         p.text.text-left Termino:
-        input(id="GET-expsdate" type="date" name="expsdate" placeholder="00/00/0000")
+        input(id="GET-expsdata" type="data" name="expsdata" placeholder="00/00/0000")
 
       // Get the exps About
       label(for="GET-expsabout").animate_intro
