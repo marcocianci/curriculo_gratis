@@ -9,8 +9,10 @@
 
 ## Status do projeto :construction:
 > Desenvolvimento constante :shipit:
-> Link [Curriculo Grátis - Firebase app](https://curriculo-gratis.firebaseapp.com)
-> Link [Curriculo Grátis -  Heroku app](https://curriculo-gratis.herokuapp.com)
+>
+> [Curriculo Grátis - Firebase app](https://curriculo-gratis.firebaseapp.com)
+> ou
+> [Curriculo Grátis -  Heroku app](https://curriculo-gratis.herokuapp.com)
 >
 > Se você quiser contribuir de alguma forma no código siga os passos abaixo para instalar em sua máquina.
 
