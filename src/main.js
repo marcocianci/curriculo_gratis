@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import VueFire from 'vuefire'
 import router from './router'
 import VueHead from 'vue-head'
 import VueScrollTo from 'vue-scrollto'
@@ -16,6 +17,7 @@ import Notice from '@/components/Notice'
 import Advertising from '@/components/Advertising'
 import Footer from '@/components/Footer'
 
+Vue.use(VueFire)
 Vue.use(VueHead)
 Vue.use(VueScrollTo)
 
