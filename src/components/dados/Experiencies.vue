@@ -2,21 +2,21 @@
   div
     fieldset.experience(v-for="(exp, key, index) in exps")
       legend.animate_intro.text-left
-        | Experiencia
+        | Experiencia {{ exp.experience.work }}
         button.btn-less(type="button" @click='remove_component(key)')
           i -
         button.btn-plus(type="button" @click='new_component(key)')
           i +
 
       // Get the exps Now?
-      label(for="GET-expsnow" v-bind:class="{ active: exps_now }").animate_intro
-        input(id="GET-expsnow" type="checkbox" name="expsdata" v-model="exps_now").display-n-print
+      label.exps_now(v:for="'GET-expsnow' + exp.id" v-bind:class="{ active: exp.experience.now }").animate_intro
+        input(v:id="'GET-expsnow' + exp.id" type="checkbox" v:name="'now' + exp.id" v-model="exp.experience.now").display-n-print
         | Atual
 
       // Get the School
       label(for="GET-school").animate_intro
         p.text.text-left Empresa:
-        input(id="GET-school" type="text" name="school" placeholder="Nome da empresa ou trabalho...")
+        input(id="GET-school" type="text" name="school" placeholder="Nome da empresa ou trabalho..." v-model="exp.experience.work")
 
       // Get the exps
       label(for="GET-exps").animate_intro
@@ -27,7 +27,7 @@
       label(for="GET-expsdata").animate_intro
         p.text.text-left Inicio:
         input(id="GET-expsdata" type="data" name="expsdata" placeholder="00/00/0000")
-      label(for="GET-expsdata" v-show="!exps_now").animate_intro
+      label(for="GET-expsdata" v-show="!exp.experience.now").animate_intro
         p.text.text-left Termino:
         input(id="GET-expsdata" type="data" name="expsdata" placeholder="00/00/0000")
 
@@ -45,7 +45,16 @@
         exps_now: false,
         exps: [
           {
-            name: 'Experiencia'
+            id: 0,
+            name: 'Experiencia',
+            experience: {
+              name: '',
+              work: '',
+              data_start: '',
+              data_end: '',
+              about: '',
+              now: false
+            }
           }
         ]
       }
@@ -53,7 +62,18 @@
     methods: {
       new_component (key) {
         console.log(this.msg)
-        this.exps.push({ name: key })
+        this.exps.push({
+          id: 0,
+          name: 'Experiencia',
+          experience: {
+            name: '',
+            work: '',
+            data_start: '',
+            data_end: '',
+            about: '',
+            now: false
+          }
+        })
         console.log(key)
         console.log('##########')
         console.log(this)
