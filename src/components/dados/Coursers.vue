@@ -1,7 +1,6 @@
 <template lang='pug'>
   div
     fieldset.course(v-for="(course, key, index) in coursers" v-bind:key="course.id")
-      pre(style='text-align: left;') {{ course || json }}
       legend.animate_intro.text-left
         | Formação Academica {{ course.formation.name }}
         button.remove_course.btn-less(type="button" @click='remove_component(key)')

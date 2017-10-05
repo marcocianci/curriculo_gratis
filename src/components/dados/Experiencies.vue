@@ -16,20 +16,20 @@
       // Get the School
       label(for="GET-school").animate_intro
         p.text.text-left Empresa:
-        input(id="GET-school" type="text" name="school" placeholder="Nome da empresa ou trabalho..." v-model="exp.experience.work")
+        input(id="GET-school" type="text" name="school" placeholder="Nome da empresa ou trabalho..." v-model="exp.experience.name")
 
       // Get the exps
       label(for="GET-exps").animate_intro
         p.text.text-left Cargo:
-        input(id="GET-exps" type="text" name="exps" placeholder="Titulo ou cargo...")
+        input(id="GET-exps" type="text" name="exps" placeholder="Titulo ou cargo..." v-model="exp.experience.work")
 
       // Get the exps data
       label(for="GET-expsdata").animate_intro
         p.text.text-left Inicio:
-        input(id="GET-expsdata" type="data" name="expsdata" placeholder="00/00/0000")
+        input(id="GET-expsdata" type="date" name="expsdata" placeholder="00/00/0000")
       label(for="GET-expsdata" v-show="!exp.experience.now").animate_intro
         p.text.text-left Termino:
-        input(id="GET-expsdata" type="data" name="expsdata" placeholder="00/00/0000")
+        input(id="GET-expsdata" type="date" name="expsdata" placeholder="00/00/0000")
 
       // Get the exps About
       label(for="GET-expsabout").animate_intro
