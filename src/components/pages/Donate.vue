@@ -1,6 +1,6 @@
 <template lang="pug">
 div#donate
-  section.container.animate_intro
+  section.donate.container.animate_intro
     h1 Doações
     p Esse web apliticativo é totalmente gratuito, sendo assim você não tem nenhuma obrigação financeira com ele.
     p Porém, ele é mantido online para ajudar outras pessoas assim como deve ter ajudado você.
@@ -36,6 +36,8 @@ export default {
 }
 </script>
 <style lang="stylus">
+  .donate.container
+    margin-bottom 60px
   .email-icon
     width 100px
   .contact
