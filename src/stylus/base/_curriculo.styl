@@ -20,8 +20,6 @@
     background linear-gradient(rgba(#fff,0),rgba(#fff,1))
     font-size 14px
     font-weight 100
-    transform scale(1)
-    transition .2s all
     text-shadow 0 2px 2px rgba(#000,.2)
     position relative
     z-index 1
@@ -41,21 +39,18 @@
     &[for|="GET-coursedata"]:hover,
     &[for|="GET-expsdata"]:hover
       z-index 999
-      transition .2s all
     &[for|="GET-travel"]:nth-of-type(odd),
     &[for|="GET-maritalstatus"]:nth-of-type(odd),
     &[for|="GET-address-number"],
     &[for|="GET-coursedata"]:nth-of-type(odd),
     &[for|="GET-expsdata"]:nth-of-type(odd)
       border-right 1px solid #eee
-      transition .2s all
     &[for|="GET-travel"]:nth-of-type(odd):hover,
     &[for|="GET-maritalstatus"]:nth-of-type(odd):hover,
     &[for|="GET-address-number"]:hover,
     &[for|="GET-coursedata"]:nth-of-type(odd):hover,
     &[for|="GET-expsdata"]:nth-of-type(odd):hover
       border-right 1px solid rgba(#eee,0)
-      transition .2s all
       z-index 999
     &[for|="GET-state"],
     &[for|="GET-courseabout"]
@@ -66,6 +61,7 @@
       text-align center
       width 100% !important
       float none
+      transition .2s all
 
       input
         display inline-block
@@ -77,14 +73,9 @@
       background #333
       border-radius 6px
       color #fff
-      transform scale(1.03)
-      transition .2s all
       text-shadow 0 2px 6px rgba(#000,.5)
       box-shadow 0 0 0 2px rgba(#fff,.6), 0 4px 16px rgba(#000,.6)
       z-index 999
-    &:active
-      transform scale(1.006)
-      transition .2s all
     &:after
       content ''
       display table
@@ -102,8 +93,6 @@
     width 100%
     max-width 100%
     clear both
-    transition .2s all
-    will-change background, color
     &:focus
       background #666
       color #fff
@@ -152,3 +141,5 @@
     box-shadow 0 0 0px 4px rgba(#000,.1)
   input[type="radio"]:focus
     box-shadow 0 0 0px 4px rgba(#000,0)
+  input[type="date"]
+    padding 7.5px
