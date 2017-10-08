@@ -6,6 +6,12 @@ echo "----------------------------------------"
 time_now=$(date)
 main()
 {
+  rm -rf dist
+  echo "########################################"
+  echo "Clean last build - DONE"
+  npm run build
+  echo "########################################"
+  echo "Build - DONE"
   deploy_heroku
   deploy_firebase
   exit 1
