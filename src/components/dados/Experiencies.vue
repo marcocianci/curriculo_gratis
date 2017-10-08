@@ -1,11 +1,11 @@
 <template lang='pug'>
   div
-    fieldset.experience(v-for="(exp, key, index) in exps")
+    fieldset.experience(v-for="(exp, key, index) in exps" v-bind:id="'exp-' + exp.id")
       legend.animate_intro.text-left
         | Experiencia {{ exp.experience.work }}
         button.btn-less(type="button" @click='remove_component(key)')
           i -
-        button.btn-plus(type="button" @click='new_component(key)')
+        button.btn-plus(type="button" @click='new_component(key)' v-scroll-to="{ el: '#exp-' + exp.id }")
           i +
 
       // Get the exps Now?

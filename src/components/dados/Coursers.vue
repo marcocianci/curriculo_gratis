@@ -1,11 +1,11 @@
 <template lang='pug'>
   div
-    fieldset.course(v-for="(course, key, index) in coursers" v-bind:key="course.id")
+    fieldset.course(v-for="(course, key, index) in coursers" v-bind:id="'course-' + course.id")
       legend.animate_intro.text-left
         | Formação Academica {{ course.formation.name }}
         button.remove_course.btn-less(type="button" @click='remove_component(key)')
           i -
-        button.new_course.btn-plus(type="button" @click='new_component(key)')
+        button.new_course.btn-plus(type="button" @click='new_component(key)' v-scroll-to="{ el: '#course-' + course.id }")
           i +
 
       // Get the Course Now?
