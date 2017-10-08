@@ -35,6 +35,7 @@ deploy_heroku()
   git commit -m 'upgrade with shell-script'
   echo "########################################"
   echo "Commit - DONE "
+  git push
 }
 deploy_firebase()
 {
