@@ -1,16 +1,16 @@
 <template lang='pug'>
   div
-    fieldset.course(v-for="(course, key, index) in coursers" v-bind:id="'course-' + course.id")
+    fieldset.course(v-for="(course, key, index) in coursers" :id="'course-' + course.id")
       legend.animate_intro.text-left
         | Formação Academica {{ course.formation.name }}
-        button.remove_course.btn-less(type="button" @click='remove_component(key)')
+        button.btn-less(type="button" @click='remove_component(key)')
           i -
-        button.new_course.btn-plus(type="button" @click='new_component(key)' v-scroll-to="{ el: '#course-' + course.id }")
+        button.btn-plus(type="button" @click='new_component(key)' v-scroll-to="'#course-' + course.id_sibiling")
           i +
 
       // Get the Course Now?
       label.course_now(v:for="'GET-coursenow' + course.id" v-bind:class="{ active: course.formation.now }").animate_intro
-        input(v:id="'GET-coursenow' + course.id" type="checkbox" name="'now' + course.id" v-model="course.formation.now").display-n-print
+        input(:id="'GET-coursenow' + course.id" type="checkbox" name="'now' + course.id" v-model="course.formation.now").display-n-print
         | Cursando
 
       // Get the School
@@ -46,6 +46,7 @@
         coursers: [
           {
             id: 0,
+            id_sibiling: 1,
             name: 'Formação Academica',
             formation: {
               name: '',
@@ -61,9 +62,9 @@
     },
     methods: {
       new_component (key) {
-        console.log(this.msg)
         this.coursers.push({
           id: ++key,
+          id_sibiling: ++key,
           name: 'Formação Academica',
           formation: {
             name: '',

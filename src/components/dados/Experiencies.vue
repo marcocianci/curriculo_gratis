@@ -1,16 +1,16 @@
 <template lang='pug'>
   div
-    fieldset.experience(v-for="(exp, key, index) in exps" v-bind:id="'exp-' + exp.id")
+    fieldset.experience(v-for="(exp, key, index) in exps" :id="'exp-' + exp.id")
       legend.animate_intro.text-left
         | Experiencia {{ exp.experience.work }}
         button.btn-less(type="button" @click='remove_component(key)')
           i -
-        button.btn-plus(type="button" @click='new_component(key)' v-scroll-to="{ el: '#exp-' + exp.id }")
+        button.btn-plus(type="button" @click='new_component(key)' v-scroll-to="'#exp-' + exp.id_sibiling")
           i +
 
       // Get the exps Now?
       label.exps_now(v:for="'GET-expsnow' + exp.id" v-bind:class="{ active: exp.experience.now }").animate_intro
-        input(v:id="'GET-expsnow' + exp.id" type="checkbox" v:name="'now' + exp.id" v-model="exp.experience.now").display-n-print
+        input(:id="'GET-expsnow' + exp.id" type="checkbox" v:name="'now' + exp.id" v-model="exp.experience.now").display-n-print
         | Atual
 
       // Get the School
@@ -46,6 +46,7 @@
         exps: [
           {
             id: 0,
+            id_sibiling: 1,
             name: 'Experiencia',
             experience: {
               name: '',
@@ -61,9 +62,9 @@
     },
     methods: {
       new_component (key) {
-        console.log(this.msg)
         this.exps.push({
-          id: 0,
+          id: ++key,
+          id_sibiling: ++key,
           name: 'Experiencia',
           experience: {
             name: '',
