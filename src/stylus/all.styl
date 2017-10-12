@@ -14,7 +14,7 @@ html, body
   width 100%
 
 body
-  background linear-gradient(#000 + 60, color1)
+  background linear-gradient(#000 + 60, #000, #000 + 60)
   box-sizing border-box
   color #444
   font-family Arial
@@ -25,25 +25,6 @@ body
   overflow-x hidden
   padding 20px
   position relative
-  -webkit-overflow-scrolling touch
-  overflow-scrolling touch
-  +mobile()
-    background linear-gradient(#000 + 60, color2)
-  +tablet()
-    background linear-gradient(#000 + 60, color3)
-  +desktop()
-    background url("./assets/bg-paper.jpg") center bottom no-repeat fixed
-    background-size cover
-  &:before
-    background linear-gradient(rgba(#000,.6),rgba(#000,.8))
-    content ""
-    display block
-    height 100%
-    left 0
-    position absolute
-    top 0
-    width 100%
-    z-index -1
 
 hr
   border 0
