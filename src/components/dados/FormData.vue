@@ -11,8 +11,8 @@ form#curriculo(action="")
 
     // Get the data of birth
     label(for="GET-dataofbirth").animate_intro
-      p.text.text-left Data de nascimento:
-      input(id="GET-dataofbirth" type="data" name="dataofbirth" placeholder="00/00/0000" required)
+      p.text.text-left data de nascimento:
+      input(id="GET-dataofbirth" type="date" name="dataofbirth" placeholder="00/00/0000" required)
 
     // Get the nationality
     label(for="GET-nationality").animate_intro
