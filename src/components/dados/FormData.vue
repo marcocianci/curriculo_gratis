@@ -19,24 +19,7 @@ form#curriculo(action="")
       p.text.text-left Sua nacionalidade:
       select-country
 
-    // Get the marital status
-    p.animate_intro.text-left Estado civil:
-
-    label(for="GET-maritalstatus-s").animate_intro
-      input(id="GET-maritalstatus-s" type="radio" name="maritalstatus" value="s" required).display-n-print
-      span Solteiro(a)
-
-    label(for="GET-maritalstatus-c").animate_intro
-      input(id="GET-maritalstatus-c" type="radio" name="maritalstatus" value="c" required).display-n-print
-      span Casado(a)
-
-    label(for="GET-maritalstatus-d").animate_intro
-      input(id="GET-maritalstatus-d" type="radio" name="maritalstatus" value="d" required).display-n-print
-      span Divorciado(a)
-
-    label(for="GET-maritalstatus-v").animate_intro
-      input(id="GET-maritalstatus-v" type="radio" name="maritalstatus" value="v" required).display-n-print
-      span Viuvo(a)
+    select-maritals
 
     // Get the State
     label(for="GET-state").animate_intro
@@ -75,10 +58,12 @@ form#curriculo(action="")
 <script>
 import Vue from 'vue'
 import SelectCountry from '@/components/dados/SelectCountry'
+import SelectMaritals from '@/components/dados/SelectMaritals'
 import Experiencies from '@/components/dados/Experiencies'
 import Coursers from '@/components/dados/Coursers'
 
 Vue.component('select-country', SelectCountry)
+Vue.component('select-maritals', SelectMaritals)
 Vue.component('experiencies-data', Experiencies)
 Vue.component('coursers-data', Coursers)
 
