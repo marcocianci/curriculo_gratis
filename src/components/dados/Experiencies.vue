@@ -9,7 +9,7 @@
           i +
 
       // Get the exps Now?
-      label.exps_now(v:for="'GET-expsnow' + exp.id" v-bind:class="{ active: exp.experience.now }").animate_intro
+      label.exps_now(v:for="'GET-expsnow' + exp.id" v-bind:class="{ active: exp.experience.now }" @keyup.enter='exp.experience.now = !exp.experience.now').animate_intro
         input(:id="'GET-expsnow' + exp.id" type="checkbox" v:name="'now' + exp.id" v-model="exp.experience.now").display-n-print
         | Atual
 

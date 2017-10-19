@@ -9,7 +9,7 @@
           i +
 
       // Get the Course Now?
-      label.course_now(v:for="'GET-coursenow' + course.id" v-bind:class="{ active: course.formation.now }").animate_intro
+      label.course_now(v:for="'GET-coursenow' + course.id" @keyup.enter='course.formation.now = !course.formation.now').animate_intro
         input(:id="'GET-coursenow' + course.id" type="checkbox" name="'now' + course.id" v-model="course.formation.now").display-n-print
         | Cursando
 
@@ -27,7 +27,7 @@
       label(for="GET-coursedata").animate_intro
         p.text.text-left Inicio:
         input(id="GET-coursedata" type="date" name="coursedata" placeholder="00/00/0000" v-model="course.formation.data_start").animate_intro
-      label(for="GET-coursedata" v-show="!course.formation.now").animate_intro
+      label(for="GET-coursedata").animate_intro
         p.text.text-left Termino:
         input(id="GET-coursedata" type="date" name="coursedata" placeholder="00/00/0000" v-model="course.formation.data_end").animate_intro
 
