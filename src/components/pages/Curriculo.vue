@@ -8,7 +8,7 @@ div
 
     h3 Diversos formatos de curriculos para sua escolha!
 
-    h2 Preencha o formulário abaixo..
+    h2#start_app Preencha o formulário abaixo..
     // ou faça login...
 
   main#app-theme.app.animate_app_intro

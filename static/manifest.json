@@ -4,12 +4,12 @@
   "description": "Essa aplicação web tem o objetivo de ajudar a todos que precise de um curriculo, rápido, fácil e grátis. Facilitando a forma que você cria seus currículos, com diversas opções de design totalmente gratuito. Interface totalmente adpatavel e reativa ao tamanho da tela do dispositivo que estive sendo renderizada.",
   "icons": [
     {
-      "src": "/static/img/icons/android-chrome-192x192.png",
+      "src": "/static/img/icons/manifest/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/static/img/icons/android-chrome-512x512.png",
+      "src": "/static/img/icons/manifest/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
