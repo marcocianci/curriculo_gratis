@@ -7,11 +7,14 @@
 .app.theme_lucaslimou
   background linear-gradient(#fff 60%, color2 + 130)
 
-.app.theme_outro
-  background linear-gradient(#fff 60%, color2 + 130)
 
-.app.theme_teste
-  background linear-gradient(#fff 60%, color3 + 130)
+.left,
+.right
+  clear none
+.left
+  float left
+.right
+  float right
 
 .app.theme_lucaslimax .theme
   position relative
@@ -40,6 +43,10 @@
   .mark_span
     color color-1
   section
+    &:after
+      content ""
+      display table
+      clear both
     & > h3
       font-size 19px
       color color-1
@@ -47,19 +54,9 @@
       float left
       width 66px
       padding 16px 10px
-    &:after
-      content ""
-      display table
-      clear both
-    .left, .right
-      clear none
-    .left
-      float left
-    .right
-      float right
     .mark_bullet
       color #333
       text-transform uppercase
-      .m_bullet
-        color color-1
-        margin 0 6px
+    .m_bullet
+      color color-1
+      margin 0 6px
