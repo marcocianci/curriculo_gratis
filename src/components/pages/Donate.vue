@@ -7,7 +7,7 @@ div#donate
     p Esse custo de manter o projeto online e evoluir o seu desenvolvimento virá dos fundos de doações que recebemos.
     p Se você sentir que quer ajudar com esse projeto de alguma forma simbólica ou deseja expressar algum comentário, deixe sua contribuição no formulário logo a seguir
   br
-  main.app.animate_app_intro
+  main.app
     section.section
       svg(class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512")
         path(d="M146.659 125.521v33.925H0v15.657h146.659v73.068H25.052v15.657h121.607v28.705H48.016v15.657h98.642v78.287H512V125.521H146.659zm349.684 245.301H162.316V148.295l167.01 115.661 123.14-85.169-8.907-12.878-114.227 79.006-149.789-103.737h316.799v229.644z")

@@ -11,7 +11,7 @@ div
     h2#start_app Preencha o formulário abaixo..
     // ou faça login...
 
-  main#app-theme.app.animate_app_intro
+  main#app-theme.app
     section.section
       form-curriculo
 

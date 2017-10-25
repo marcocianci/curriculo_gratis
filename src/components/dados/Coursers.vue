@@ -1,7 +1,7 @@
 <template lang='pug'>
   div
     fieldset.course(v-for="(course, key, index) in coursers" :id="'course-' + course.id")
-      legend.animate_intro.text-left
+      legend.text-left
         | Formação Academica {{ course.formation.name }}
         button.btn-less(type="button" @click='remove_component(key)')
           i -
@@ -9,30 +9,30 @@
           i +
 
       // Get the Course Now?
-      label.course_now(v:for="'GET-coursenow' + course.id" @keyup.enter='course.formation.now = !course.formation.now').animate_intro
+      label.course_now(v:for="'GET-coursenow' + course.id" @keyup.enter='course.formation.now = !course.formation.now')
         input(:id="'GET-coursenow' + course.id" type="checkbox" name="'now' + course.id" v-model="course.formation.now").display-n-print
         | Cursando
 
       // Get the School
-      label(for="GET-school").animate_intro
+      label(for="GET-school")
         p.text.text-left Instituição:
         input(id="GET-school" type="text" name="school" placeholder="Escola, cursos, workshops..." v-model="course.formation.school")
 
       // Get the Course
-      label(for="GET-course").animate_intro
+      label(for="GET-course")
         p.text.text-left Formação:
         input(id="GET-course" type="text" name="course" placeholder="Nome do curso..." v-model='course.formation.name')
 
       // Get the Course data
-      label(for="GET-coursedata").animate_intro
+      label(for="GET-coursedata")
         p.text.text-left Inicio:
-        input(id="GET-coursedata" type="date" name="coursedata" placeholder="00/00/0000" v-model="course.formation.data_start").animate_intro
-      label(for="GET-coursedata").animate_intro
+        input(id="GET-coursedata" type="date" name="coursedata" placeholder="00/00/0000" v-model="course.formation.data_start")
+      label(for="GET-coursedata")
         p.text.text-left Termino:
-        input(id="GET-coursedata" type="date" name="coursedata" placeholder="00/00/0000" v-model="course.formation.data_end").animate_intro
+        input(id="GET-coursedata" type="date" name="coursedata" placeholder="00/00/0000" v-model="course.formation.data_end")
 
       // Get the Course About
-      label(for="GET-courseabout").animate_intro
+      label(for="GET-courseabout")
         p.text.text-left Sobre:
         textarea(id="GET-courseabout" placeholder="Atividades e  desenvolvimento currilar do seu curso..." v-model="course.formation.about")
 </template>

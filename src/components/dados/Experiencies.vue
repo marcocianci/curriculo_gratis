@@ -1,7 +1,7 @@
 <template lang='pug'>
   div
     fieldset.experience(v-for="(exp, key, index) in exps" :id="'exp-' + exp.id")
-      legend.animate_intro.text-left
+      legend.text-left
         | Experiencia {{ exp.experience.work }}
         button.btn-less(type="button" @click='remove_component(key)')
           i -
@@ -9,30 +9,30 @@
           i +
 
       // Get the exps Now?
-      label.exps_now(v:for="'GET-expsnow' + exp.id" v-bind:class="{ active: exp.experience.now }" @keyup.enter='exp.experience.now = !exp.experience.now').animate_intro
+      label.exps_now(v:for="'GET-expsnow' + exp.id" v-bind:class="{ active: exp.experience.now }" @keyup.enter='exp.experience.now = !exp.experience.now')
         input(:id="'GET-expsnow' + exp.id" type="checkbox" v:name="'now' + exp.id" v-model="exp.experience.now").display-n-print
         | Atual
 
       // Get the School
-      label(for="GET-school").animate_intro
+      label(for="GET-school")
         p.text.text-left Empresa:
         input(id="GET-school" type="text" name="school" placeholder="Nome da empresa ou trabalho..." v-model="exp.experience.name")
 
       // Get the exps
-      label(for="GET-exps").animate_intro
+      label(for="GET-exps")
         p.text.text-left Cargo:
         input(id="GET-exps" type="text" name="exps" placeholder="Titulo ou cargo..." v-model="exp.experience.work")
 
       // Get the exps data
-      label(for="GET-expsdata").animate_intro
+      label(for="GET-expsdata")
         p.text.text-left Inicio:
         input(id="GET-expsdata" type="date" name="expsdata" placeholder="00/00/0000")
-      label(for="GET-expsdata" v-show="!exp.experience.now").animate_intro
+      label(for="GET-expsdata" v-show="!exp.experience.now")
         p.text.text-left Termino:
         input(id="GET-expsdata" type="date" name="expsdata" placeholder="00/00/0000")
 
       // Get the exps About
-      label(for="GET-expsabout").animate_intro
+      label(for="GET-expsabout")
         p.text.text-left Sobre:
         textarea(id="GET-expsabout" placeholder="Atividades e  desenvolvimento currilar do seu curso...")
 </template>
