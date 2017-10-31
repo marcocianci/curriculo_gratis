@@ -1,5 +1,6 @@
 <template lang='pug'>
   div
+    button.btn(v-if="coursers == 0" type="button" @click='new_component()) Nova Formação +
     fieldset.course(v-for="(course, key, index) in coursers" :id="'course-' + course.id")
       legend.text-left
         | Formação Academica {{ course.formation.name }}
@@ -61,7 +62,7 @@
       }
     },
     methods: {
-      new_component (key) {
+      new_component (key = 1) {
         this.coursers.push({
           id: ++key,
           id_sibiling: ++key,
