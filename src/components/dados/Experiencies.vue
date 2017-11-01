@@ -1,6 +1,6 @@
 <template lang='pug'>
   div
-    button.btn(v-if="exps == 0" type="button" @click='new_component()) Nova Experiencia +
+    button.btn.new_exp(v-if="exps == 0" type="button" @click='new_component()) + Adicionar Experiencia
     fieldset.experience(v-for="(exp, key, index) in exps" :id="'exp-' + exp.id")
       legend.text-left
         | Experiencia {{ exp.experience.work }}
@@ -62,7 +62,7 @@
       }
     },
     methods: {
-      new_component (key = 1) {
+      new_component (key = -1) {
         this.exps.push({
           id: ++key,
           id_sibiling: ++key,
